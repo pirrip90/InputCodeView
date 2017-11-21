@@ -53,9 +53,11 @@
 
 >如果该属性未设置，也意味着codeBackgroundF设置的属性将无效（codeBackground和codeBackgroundF将使用默认的背景图）
 - **codeBackgroundF**
->设置被输入的输入框的选中背景图
+>设置被将被输入的输入框的选中背景图
 
 >如果该属性未设置，则将被输入的输入框不会带有选中效果，输入框全部使用codeBackground
+- **layout_width和layout_height**
+>设置wrap_content即可
 
 
 
