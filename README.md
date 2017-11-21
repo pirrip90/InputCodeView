@@ -1,4 +1,4 @@
-# Android多行文字滚动(比如中奖信息滚动)
+# Android验证码输入框
 
 ## 1、GIF图
 ![GIF图](https://github.com/pirrip90/InputCodeView/blob/master/screen/screen.gif)
