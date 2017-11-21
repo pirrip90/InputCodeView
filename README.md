@@ -10,7 +10,7 @@
 | codeTextSize | float |验证码文字大小(默认大小为16sp)
 | codeSpace | dimension |验证码输入框的间隙(默认2dp)
 | codeBackground | reference |验证码输入框背景图
-| codeBackgroundF | reference |被输入的验证码输入框选中背景图(参考gif图里的最后一个输入例子)
+| codeBackgroundF | reference |将被输入的验证码输入框选中背景图(参考gif图里的最后一个输入例子)
 | codeWidth | dimension |验证码输入框宽度
 | codeHeight | dimension |验证码输入框高度
 | codeNumber | integer |验证码个数(默认为4个)
@@ -41,7 +41,7 @@
 - **codeWidth**
 >设置输入框宽度
 
->一般不用设置，InputCodeView会自动给其分配成文字的高度(使其成为正方形)，当然设置也没问题
+>一般不用设置，InputCodeView会自动给其分配成文字的高度(使其成为正方形)
 - **codeHeight**
 >设置输入框高度
 
@@ -55,7 +55,7 @@
 - **codeBackgroundF**
 >设置被输入的输入框的选中背景图
 
->如果该属性未设置，则输入框不会带有选中效果，输入框全部使用codeBackground
+>如果该属性未设置，则将被输入的输入框不会带有选中效果，输入框全部使用codeBackground
 
 
 
