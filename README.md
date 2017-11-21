@@ -66,7 +66,7 @@ Add the dependency:
 dependencies {
     ...
     
-    implementation 'com.xubo.inputcodeviewlib:InputCodeView:1.0.0'
+    implementation 'com.xubo.inputcodeviewlib:InputCodeView:1.0.1'
 }
 ```
 **Android Studio 3.0以上可以使用implementation代替compile,低于3.0依然使用compile**
