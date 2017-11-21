@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputCodeView">
+
+        <!-- code码文字颜色(默认颜色为黑色) -->
+        <attr name="codeTextColor" format="color"/>
+
+        <!-- code码文字大小(默认文字大小为16sp) -->
+        <attr name="codeTextSize" format="integer"/>
+
+        <!-- code码之间的间隙(默认为2dp) -->
+        <attr name="codeSpace" format="dimension"/>
+
+        <!-- code码的背景图(默认为背景框矩形编辑框) -->
+        <attr name="codeBackground" format="reference"/>
+
+        <!-- code码的选中背景图(默认为背景框矩形编辑框) -->
+        <attr name="codeBackgroundF" format="reference"/>
+
+        <!-- code码的宽度(默认为文字高度)-->
+        <attr name="codeWidth" format="dimension"/>
+
+        <!-- code码的高度(默认为文字高度) -->
+        <attr name="codeHeight" format="dimension"/>
+
+        <!-- code码的个数(默认为4个) -->
+        <attr name="codeNumber" format="integer"/>
+
+    </declare-styleable>
+</resources>

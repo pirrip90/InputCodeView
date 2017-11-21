@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xubo.inputcodeview.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="不设置背景图(默认背景图)"
+            android:textSize="25sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#F1F1F1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1861"
+                    android:textColor="#818181"
+                    android:textSize="21sp"/>
+
+                <com.xubo.inputcodeviewlib.InputCodeView
+                    android:id="@+id/demo1_cv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    app:codeNumber="4"
+                    app:codeSpace="4dp"
+                    app:codeTextColor="#818181"
+                    app:codeTextSize="21"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="345"
+                    android:textColor="#818181"
+                    android:textSize="21sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/demo1_get_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获取"/>
+
+                <Button
+                    android:id="@+id/demo1_clear_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="清空"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="设置不带焦点的背景图"
+            android:textSize="25sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#F1F1F1"
+            android:padding="10dp">
+
+            <com.xubo.inputcodeviewlib.InputCodeView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:codeBackground="@drawable/line_code_background"
+                app:codeNumber="6"
+                app:codeSpace="5dp"
+                app:codeTextColor="#818181"
+                app:codeTextSize="24"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="设置带焦点的背景图"
+            android:textSize="25sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#F1F1F1"
+            android:padding="10dp">
+
+            <com.xubo.inputcodeviewlib.InputCodeView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:codeBackground="@drawable/demo3_code_background_n"
+                app:codeBackgroundF="@drawable/demo3_code_background_f"
+                app:codeNumber="6"
+                app:codeSpace="5dp"
+                app:codeTextColor="#818181"
+                app:codeTextSize="25"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
