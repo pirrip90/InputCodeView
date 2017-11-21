@@ -10,7 +10,7 @@
 | codeTextSize | float |验证码文字大小(默认大小为16sp)
 | codeSpace | dimension |验证码输入框的间隙(默认2dp)
 | codeBackground | reference |验证码输入框背景图
-| codeBackgroundF | reference |验证码输入框选中背景图
+| codeBackgroundF | reference |被输入的验证码输入框选中背景图(参考gif图里的最后一个输入例子)
 | codeWidth | dimension |验证码输入框宽度
 | codeHeight | dimension |验证码输入框高度
 | codeNumber | integer |验证码个数(默认为4个)
@@ -25,23 +25,40 @@
 ## 4、xml使用例子
 ```xml
     <com.xubo.inputcodeviewlib.InputCodeView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:codeBackground="@drawable/demo3_code_background_n"
-                    app:codeBackgroundF="@drawable/demo3_code_background_f"
-                    app:codeNumber="6"
-                    app:codeSpace="5dp"
-                    app:codeTextColor="#818181"
-                    app:codeTextSize="25"
-                    />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:codeBackground="@drawable/demo3_code_background_n"
+        app:codeBackgroundF="@drawable/demo3_code_background_f"
+        app:codeNumber="6"
+        app:codeSpace="5dp"
+        app:codeTextColor="#818181"
+        app:codeTextSize="25"
+        />
 ```
 ## 5、xml使用注意事项
 - **textSize**
 >textSize属性是float类型，例子中也并没写17sp，所以文字大小是多少sp就写数字多少，支持浮点型
-- **scrollScreenTime**
->scrollScreenTime表示滚动显示的一屏数据所需的时间，所以时间设置越短，滚动越快。注意时间单位是毫秒
-- **layout_height**
->layout_height只需设置成wrap_content即可。不管LineScrollView高度设置多大，LineScrollView都会自动计算自己所需大小，设置其他其实毫无意义
+- **codeWidth**
+>设置输入框宽度
+
+>一般不用设置，InputCodeView会自动给其分配成文字的高度(使其成为正方形)，当然设置也没问题
+- **codeHeight**
+>设置输入框高度
+
+>和codeWidth属性一样，一般不用设置，InputCodeView会自动给其分配成文字的高度
+
+>如果设置输入框的高度不足以达到输入框文字高度,则设置的高度将无效，输入框高度将保持文字的高度
+- **codeBackground**
+>设置输入框的背景图
+
+>如果该属性未设置，也意味着codeBackgroundF设置的属性将无效（codeBackground和codeBackgroundF将使用默认的背景图）
+- **codeBackgroundF**
+>设置被输入的输入框的选中背景图
+
+>如果该属性未设置，则输入框不会带有选中效果，输入框全部使用codeBackground
+
+
+
 
 ## 6、gradle
 Add the dependency:
@@ -56,7 +73,7 @@ dependencies {
 
 
 ## 7、代码编译失败？
-1.删除linescrollviewlib的build.gradle里`apply plugin: 'com.novoda.bintray-release'`下面所有groovy代码(包括这一行)
+1.删除inputcodeviewlib的build.gradle里`apply plugin: 'com.novoda.bintray-release'`下面所有groovy代码(包括这一行)
 >工程是没有bintray.properties文件,无法读取bintray.properties信息
 
 2.root目录里，删除gradle.properties里的`systemProp.http.proxyHost=127.0.0.1`和`systemProp.http.proxyPort=1080`
