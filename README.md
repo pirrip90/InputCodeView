@@ -63,7 +63,7 @@
 
 
 ## 6、gradle
-Add the dependency:
+add the dependency:
 ```gradle
 dependencies {
     ...
@@ -75,7 +75,7 @@ dependencies {
 
 
 ## 7、代码编译失败？
-1.root目录里，删除gradle.properties里的`systemProp.http.proxyHost=127.0.0.1`和`systemProp.http.proxyPort=1080`
+1.删除项目根目录gradle.properties里的`systemProp.http.proxyHost=127.0.0.1`和`systemProp.http.proxyPort=1080`
 >gradle.properties里的代理信息不是你本机代理配置,请删除或改成你本机代理地址和端口
 
 2.Android Studio更新到3.0
